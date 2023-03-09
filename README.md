@@ -3,12 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system, osTicket.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,34 +17,35 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Azure Subscription
+- Azure Resource Group 
+- Azure Virtual Machine
 
 <h2>Installation Steps</h2>
 
+<!--- Step 1 -->
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+To start this lab, we're going to create an Azure Resource Group named "RG-osTicket" and then create a Virtual Machine (VM) named "VM-osTicket" inside the Resource Group. During the creation of the VM, a default virtual network/subnet will be created.
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/BAOqjzr.jpg" height="80%" width="80%" alt="Virtual Machine Creation"/>
 </p>
 <br />
 
+<!--- Step 2 -->
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Next, we're going to use Remote Desktop Connection to connect to the Virtual Machine we created. To do this, copy the Public IP address inside the overview tab of your Virtual Machine and then paste it where it says computer and click connect. You will then be prompted to enter a username and password. Enter in the credentials you provided when you created your Virtual Machine.
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/qmXx8le.jpg" height="80%" width="80%" alt="Remote Desktop Connection"/>
+</p>
+<br />
+
+<!--- Step 3 -->
+<p>
+Next, we're going to enable Internet Information Services (IIS) and CGI inside of the Virtual Machine. To do this go to your control panel, click on Programs, and then click on Turn Windows features on or off, and then select Internet Information Services. Next, click the dropdown next to Internet Information Services; open up World Wide Web Services; open up Application Development Features, and then select CGI.
+</p>
+<p>
+<img src="https://i.imgur.com/lI98Zzq.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
