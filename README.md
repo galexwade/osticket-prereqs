@@ -157,3 +157,6 @@ Congratulations, hopefully is is installed with no errors!
 - End Users osTicket URL: http://localhost/osTicket/
 <br />
 
+<p>
+Next part: <a href="https://github.com/galexwade/post-install-config">osTicket - Post Install Configuration</a>
+</p>
