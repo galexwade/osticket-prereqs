@@ -146,7 +146,14 @@ Lastly for clean up we need to do a couple of things:
 
 - Delete C:\inetpub\wwwroot\osTicket\setup
 - Set Permissions of ost-config.php to "Read" only
+<br />
 
+<!--- Step 14 -->
+<p>
+Congratulations, hopefully is is installed with no errors!
+</p>
 
+- Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+- End Users osTicket URL: http://localhost/osTicket/
 <br />
 
